@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estúdio de Beleza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
-   <header>
-<a href="#inicio">Início</a>
-<a href="#sobre">Sobre</a>
-<a href="#servicos">Serviços</a>
-<a href="#contato">Contato</a>
-</header>
+<body>
 
+  <header>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </header>
 
-<section id="inicio" class="hero">
-<div class="hero-img">
-<img>
-</div>
-<div class="typing">
-<h1 id="type-title"></h1>
-<p id="type-text"></p>
-</div>
-</section>
+  <section id="inicio" class="hero">
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="">
+    </div>
 
+    <div class="typing">
+      <h1 id="type-title"></h1>
+      <p id="type-text"></p>
+    </div>
+  </section>
 
-<section id="sobre">
-<div class="about">
-<div>
-<h2>Sobre Mim</h2>
-<p>Cada detalhe do estúdio foi pensado para proporcionar beleza, cuidado e acolhimento. Aqui, a delicadeza se transforma em arte.</p>
-</div>
-<img>
-</div>
-</section>
+  <section id="sobre">
+    <div class="about">
+      <div>
+        <h2>Sobre Mim</h2>
+        <p>
+          Cada detalhe do estúdio foi pensado para proporcionar beleza,
+          cuidado e acolhimento. Aqui, a delicadeza se transforma em arte.
+        </p>
+      </div>
 
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+    </div>
+  </section>
 
-<section id="servicos">
-<h2>Meus Serviços</h2>
-<div class="slideshow-wrapper">
-<button class="nav" onclick="moveSlide(-1)">❮</button>
-<div class="slideshow">
-<div class="slide-track" id="track">
-<img src="">
-<img src="" >
-<img src="" >
-<img src="" >
-</div>
-</div>
-<button class="nav" onclick="moveSlide(1)">❯</button>
-</div>
-</section>
+  <section id="servicos">
+    <h2>Meus Serviços</h2>
 
+    <div class="slideshow-wrapper">
+      <button class="nav" id="prev">❮</button>
 
-<section id="contato">
-</footer>
+      <div class="slideshow">
+        <div class="slide-track" id="track">
+         <img src="img-makes/3.png" />
+<img src="img-makes/4.png" />
+<img src="img-makes/5.png" />
+<img src="img-makes/6.png" />
+<img src="img-makes/7.png" />
+<img src="img-makes/8.png" />
+        </div>
+      </div>
+
+      <button class="nav" id="next">❯</button>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="contact">
+      <h2>Contato</h2>
+
+      <div class="icons">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="mailto:contato@email.com" aria-label="Email">✉️</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <span class="close" id="closeModal">×</span>
+    <img id="modalImg">
+  </div>
+
+  <footer>
+    © 2026 Estúdio de Beleza · Todos os direitos reservados
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
