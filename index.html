@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Xavier</title>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>olá panquecas</h1>
+   <header>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a>
+</header>
+
+
+<section id="inicio" class="hero">
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" />
+</div>
+<div class="typing">
+<h1 id="type-title"></h1>
+<p id="type-text"></p>
+</div>
+</section>
+
+
+<section id="sobre">
+<div class="about">
+<div>
+<h2>Sobre Mim</h2>
+<p>Cada detalhe do estúdio foi pensado para proporcionar beleza, cuidado e acolhimento. Aqui, a delicadeza se transforma em arte.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" />
+</div>
+</section>
+
+
+<section id="servicos">
+<h2>Meus Serviços</h2>
+<div class="slideshow-wrapper">
+<button class="nav" onclick="moveSlide(-1)">❮</button>
+<div class="slideshow">
+<div class="slide-track" id="track">
+<img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552" />
+<img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4" />
+<img src="https://images.unsplash.com/photo-1526045431048-05b02e689c9f" />
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15" />
+</div>
+</div>
+<button class="nav" onclick="moveSlide(1)">❯</button>
+</div>
+</section>
+
+
+<section id="contato">
+</footer>
 </body>
 </html>
