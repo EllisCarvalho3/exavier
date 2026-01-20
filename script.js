@@ -1,4 +1,4 @@
-/* Typing effect */
+// efeito digitação
 const titleText = 'Beleza com delicadeza'; 'Amor';
 const descText =
   'Um espaço criado para realçar sua essência com cuidado, arte e sofisticação.';
@@ -26,7 +26,7 @@ function typingEffect() {
 
 setInterval(typingEffect, 80);
 
-/* Slideshow manual */
+/* slideshow manual */
 let slideIndex = 0;
 const track = document.getElementById('track');
 const slides = track.children;
@@ -41,7 +41,7 @@ function moveSlide(direction) {
   track.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
 }
 
-/* Modal */
+/* modal */
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modalImg');
 
