@@ -1,5 +1,5 @@
 /* Typing effect */
-const titleText = 'Beleza com delicadeza';
+const titleText = 'Beleza com delicadeza'; 'Amor';
 const descText =
   'Um espaço criado para realçar sua essência com cuidado, arte e sofisticação.';
 

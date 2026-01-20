@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Estúdio de Beleza</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+  <link rel="icon" href="img/icon.png" type="">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
+ <header>
+  <a href="#inicio" class="logo">
+    <img src="img/icon.png" alt="Logo Estúdio">
+  </a>
+
+  <nav>
     <a href="#inicio">Início</a>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
     <a href="#contato">Contato</a>
-  </header>
+  </nav>
+</header>
+
 
   <section id="inicio" class="hero">
     <div class="hero-img">
@@ -34,10 +42,9 @@
   <section id="sobre">
     <div class="about">
       <div>
-        <h2>Sobre Mim</h2>
+        <h2 id="efeito" class="glow">Sobre mim</h2>
         <p>
-          Cada detalhe do estúdio foi pensado para proporcionar beleza,
-          cuidado e acolhimento. Aqui, a delicadeza se transforma em arte.
+          Encontrei no universo da beleza a minha verdadeira vocação. Como maquiadora profissional, transformo o autocuidado em arte, dedicando-me a realçar a beleza única de cada cliente com sensibilidade e técnica. Sou especialista em design de sobrancelhas, dominando tanto o design simples quanto a aplicação de henna para um olhar marcante e natural. Meu objetivo é oferecer um atendimento de excelência, onde a precisão e o olhar apurado se unem para elevar a autoestima de quem confia no meu trabalho.
         </p>
       </div>
       <img src="img/elloa.png" alt="">
@@ -45,7 +52,7 @@
   </section>
 
   <section id="servicos">
-    <h2>Meus Serviços</h2>
+    <h2  id="efeito" class="glow">Meus serviços</h2>
 
     <div class="slideshow-wrapper">
       <button class="nav" id="prev">❮</button>
@@ -67,7 +74,7 @@
 
   <section id="contato">
     <div class="contact">
-      <h2>Contato</h2>
+      <h2  id="efeito" class="glow">Contato</h2>
 
       <div class="icons">
         <a href="#" aria-label="Instagram">📷;</a>
@@ -78,7 +85,7 @@
 
   <!-- Modal -->
   <div class="modal" id="modal">
-    <span class="close" id="closeModal">×</span>
+    <span class="close" id="closeModal">x</span>
     <img id="modalImg">
   </div>
 
