@@ -695,6 +695,7 @@ footer {
 
   .about p {
     font-size: 1.15rem;
+     text-align: justify;
   }
 
   /* SLIDESHOW */
@@ -722,12 +723,18 @@ footer {
 
 @media (max-width: 480px) {
 
-  header {
-    height: auto;
-    padding: 1rem;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
+ header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 🔥 */
+}
+
 
   header nav {
     gap: 1rem;
@@ -769,7 +776,7 @@ footer {
 
   .about p {
     font-size: 1.05rem;
-    text-align: left;
+    text-align: justify;
   }
 
   /* SLIDESHOW */
