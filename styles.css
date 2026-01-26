@@ -641,7 +641,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; text-align: center; }
   .about { grid-template-columns: 1fr; }
 }
 
@@ -852,7 +851,7 @@ footer {
 @media (max-width: 420px) {
 
   header .logo {
-    left: 0.7rem;
+    left: 1rem;
   }
   
   header nav a {
@@ -861,8 +860,8 @@ footer {
   }
 
    header .logo img {
-    width: 62px;
-    height: 62px;
+    width: 68px;
+    height: 68px;
   }
 
   h2.glow {
@@ -895,7 +894,6 @@ footer {
   .wrapper .icon {
     width: 60px;
     height: 60px;
-    padding: 0%;
   }
 
   .wrapper .icon i {
