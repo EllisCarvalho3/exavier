@@ -734,45 +734,52 @@ footer {
   }
 }
 }
-
-@media (max-width: 480px) {
-  header nav {
-    gap: 1rem;
-  }
-
-  header nav a {
-    font-size: 0.9rem;
-  }
-
-  .glow-title {
-    font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .hero-img {
-    width: 190px;
-    height: 190px;
-  }
-
-  .slide-track img {
-    width: 200px;
-    height: 260px;
-  }
-}
-
-
 @media (max-width: 480px) {
 
+  /* ===== GERAL ===== */
+  section {
+    padding: 5rem 6vw 3rem;
+  }
 
   h2.glow {
     font-size: 2rem;
+    text-align: center;
   }
 
-  /* HERO */
+  /* ===== HEADER ===== */
+  header {
+    height: 70px;
+    padding: 0 1.2rem;
+  }
+
+  header .logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  header nav {
+    gap: 1.2rem;
+  }
+
+  header nav a {
+    font-size: 0.95rem;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
   .hero-img {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
+  }
+
+  .typing {
+    max-width: 100%;
   }
 
   .glow-title {
@@ -783,10 +790,17 @@ footer {
     font-size: 1.05rem;
   }
 
-  /* SOBRE */
+  /* ===== SOBRE ===== */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
   .about img {
     width: 260px;
     height: 260px;
+    margin: 0 auto;
   }
 
   .about p {
@@ -794,7 +808,7 @@ footer {
     text-align: justify;
   }
 
-  /* SLIDESHOW */
+  /* ===== SLIDESHOW ===== */
   .slide-track img {
     width: 200px;
     height: 260px;
@@ -804,9 +818,10 @@ footer {
     display: none; /* swipe natural no mobile */
   }
 
-  /* CONTATO */
+  /* ===== CONTATO ===== */
   .wrapper {
     gap: 0.5rem;
+    padding-top: 20px;
   }
 
   .wrapper .icon {
@@ -817,9 +832,15 @@ footer {
 
   footer {
     font-size: 0.8rem;
+    padding: 2rem 1rem;
   }
 }
+
 @media (max-width: 420px) {
+
+  h2.glow {
+    font-size: 1.8rem;
+  }
 
   .glow-title {
     font-size: 1.7rem;
@@ -827,10 +848,6 @@ footer {
 
   .typing p {
     font-size: 1rem;
-  }
-
-  h2.glow {
-    font-size: 1.8rem;
   }
 
   .hero-img {
@@ -857,3 +874,4 @@ footer {
     font-size: 2.1rem;
   }
 }
+
