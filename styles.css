@@ -37,18 +37,20 @@ header {
 
 header .logo {
   position: absolute;
-  right: 80rem;
+  left: 6rem; 
   display: flex;
   align-items: center;
 }
 
+
 header .logo img {
-  width: 137px;
-  height: 137px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 
 header .logo:hover img {
   transform: scale(1.1);
@@ -636,27 +638,35 @@ footer {
 /* responsividade */
 @media (max-width: 768px) {
 
+
+  section {
+    padding: 6rem 6vw 4rem;
+  }
+
+  @media (max-width: 768px) {
   header {
-    padding: 0 1.5rem;
+    height: 64px;
+    padding: 0 1rem;
   }
 
   header .logo {
-    position: static;
-    margin-right: auto;
+    left: 1rem;
   }
 
   header .logo img {
-    width: 90px;
-    height: 90px;
+    width: 38px;
+    height: 38px;
   }
 
   header nav {
     gap: 1.2rem;
   }
 
-  section {
-    padding: 6rem 6vw 4rem;
+  header nav a {
+    font-size: 0.9rem;
   }
+}
+
 
   /* HERO */
   .hero {
