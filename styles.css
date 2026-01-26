@@ -712,57 +712,58 @@ footer {
      text-align: justify;
   }
 
-  /* SLIDESHOW */
-  .slide-track img {
-    width: 220px;
-    height: 280px;
+@media (max-width: 768px) {
+  .slideshow-wrapper {
+    gap: 0;
   }
 
   .nav {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
+    display: none; 
   }
 
-  /* CONTATO */
-  .wrapper .icon {
-    width: 70px;
-    height: 70px;
+  .slideshow {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .wrapper .icon i {
-    font-size: 2.4rem;
+  .slide-track img {
+    scroll-snap-align: center;
+    width: 220px;
+    height: 280px;
   }
+}
 }
 
 @media (max-width: 480px) {
-
- header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  padding: 0 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* 🔥 */
-}
-
-
   header nav {
     gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   header nav a {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
-  section {
-    padding: 5.5rem 5vw 3.5rem;
+  .glow-title {
+    font-size: 1.7rem;
   }
+}
+
+@media (max-width: 420px) {
+  .hero-img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .slide-track img {
+    width: 200px;
+    height: 260px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
 
   h2.glow {
     font-size: 2rem;
