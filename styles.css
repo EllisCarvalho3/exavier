@@ -15,6 +15,11 @@ html {
   background-color: var(--bg);
 }
 
+.menu-toggle {
+  display: none;
+  
+}
+
 
 * {
   margin: 0;
@@ -25,7 +30,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
-  color: #4a4453;
+ 
   overflow-x: hidden;
 }
 
@@ -73,7 +78,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #4a4453;
+    color: #8232d2;
   font-weight: 500;
   position: relative;
 }
@@ -321,6 +326,7 @@ section .inicio {
 .about p {
   font-size: 1.3rem;
   line-height: 1.1;
+    color: #8232d2;
 }
 
 
@@ -628,7 +634,7 @@ footer {
   padding: 2.5rem 1rem 3rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #7b6f9e;
+  color: #54088b;
   overflow: hidden;
 
 }
@@ -645,9 +651,68 @@ footer {
 }
 
 /* responsividade */
-/* =========================
-   RESPONSIVO — TABLET
-   ========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  header nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    transform: translateY(-120%);
+    transition: transform 0.4s ease;
+  }
+
+  header nav.active {
+    transform: translateY(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: #aa6ee7;
+    border-radius: 2px;
+    
+  }
+
+   
+}
+
+@media (max-width: 768px) {
+
+  header {
+    justify-content: flex-start; /* importante */
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+}
+
+
+
 @media (max-width: 768px) {
 
   /* ===== GERAL ===== */
@@ -801,6 +866,7 @@ footer {
   .typing p {
     font-size: 1.05rem;
   }
+ 
 
   /* ===== SOBRE ===== */
   .about {
@@ -855,8 +921,8 @@ footer {
   }
   
   header nav a {
-    font-size: 0.8rem; /* corrigido */
-    left: 1.3rem;
+    font-size: 1rem; /* corrigido */
+    left: 0.9rem;
   }
 
    header .logo img {
@@ -905,6 +971,9 @@ footer {
   #servicos {
     min-height: 75vh;
   }
+   h2.glow {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -917,7 +986,7 @@ footer {
 @media (max-width: 768px) {
 
   #inicio {
-    min-height: 88vh;
+    min-height: 100vh;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -947,21 +1016,23 @@ footer {
 @media (max-width: 480px) {
   .glow-title {
     font-size: 2.2rem;
+     text-align: center;
   }
 
   .typing p {
     font-size: 1.05rem;
+     text-align: center;
   }
 }
 
 @media (max-width: 420px) {
- 
-
   .glow-title {
     font-size: 2.2rem;
+     text-align: center;
   }
 
   .typing p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
