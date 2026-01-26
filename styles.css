@@ -702,7 +702,7 @@ footer {
 @media (max-width: 768px) {
 
   header {
-    justify-content: flex-start; /* importante */
+    justify-content: flex-start; 
   }
 
   .menu-toggle {
@@ -715,12 +715,10 @@ footer {
 
 @media (max-width: 768px) {
 
-  /* ===== GERAL ===== */
   section {
     padding: 6rem 6vw 4rem;
   }
 
-  /* ===== HEADER ===== */
   header {
     height: 64px;
     padding: 0 1rem;
@@ -740,10 +738,10 @@ footer {
   }
 
   header nav a {
-    font-size: 0.9rem; /* corrigido */
+    font-size: 0.9rem; 
   }
 
-  /* ===== HERO ===== */
+  
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -769,7 +767,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* ===== SOBRE ===== */
+ 
   .about {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -786,8 +784,7 @@ footer {
     font-size: 1.15rem;
     text-align: justify;
   }
-
-  /* ===== SLIDESHOW ===== */
+ 
   .slideshow-wrapper {
     gap: 0;
   }
@@ -813,7 +810,7 @@ footer {
 
 @media (max-width: 480px) {
 
-  /* ===== GERAL ===== */
+  
   section {
     padding: 5rem 6vw 3rem;
   }
@@ -823,7 +820,7 @@ footer {
     text-align: center;
   }
 
-  /* ===== HEADER ===== */
+  
   header {
     height: 70px;
     padding: 0 1.2rem;
@@ -842,7 +839,7 @@ footer {
     font-size: 0.95rem;
   }
 
-  /* ===== HERO ===== */
+  
   .hero {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -868,7 +865,7 @@ footer {
   }
  
 
-  /* ===== SOBRE ===== */
+ 
   .about {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -886,17 +883,17 @@ footer {
     text-align: justify;
   }
 
-  /* ===== SLIDESHOW ===== */
+  
   .slide-track img {
     width: 200px;
     height: 260px;
   }
 
   .nav {
-    display: none; /* swipe natural no mobile */
+    display: none; 
   }
 
-  /* ===== CONTATO ===== */
+  
   .wrapper {
     gap: 0.5rem;
     padding-top: 20px;
@@ -921,7 +918,7 @@ footer {
   }
   
   header nav a {
-    font-size: 1rem; /* corrigido */
+    font-size: 1rem; 
     left: 0.9rem;
   }
 
@@ -982,7 +979,7 @@ footer {
   }
 }
 
-/* HERO - mobile */
+
 @media (max-width: 768px) {
 
   #inicio {
