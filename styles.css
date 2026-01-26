@@ -10,6 +10,11 @@
   color-scheme: light;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--bg);
+}
+
 
 * {
   margin: 0;
