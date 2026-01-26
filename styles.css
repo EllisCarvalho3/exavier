@@ -912,3 +912,50 @@ footer {
     min-height: 40vh;
   }
 }
+
+/* HERO - mobile */
+@media (max-width: 768px) {
+
+  #inicio {
+    min-height: 60vh;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text"
+      "image";
+    gap: 2.5rem;
+    text-align: center;
+    padding-top: 7rem;
+  }
+
+  .typing {
+    grid-area: text;
+    max-width: 100%;
+  }
+
+  .hero-img {
+    grid-area: image;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-title {
+    font-size: 1.9rem;
+  }
+
+  .typing p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .glow-title {
+    font-size: 1.7rem;
+  }
+
+  .typing p {
+    font-size: 1rem;
+  }
+}

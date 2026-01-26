@@ -1,28 +1,54 @@
-// efeito digitação
-const titleText = 'Beleza com delicadeza'; 'Amor';
-const descText =
-  'Um espaço criado para realçar sua essência com cuidado, arte e sofisticação.';
+// efeito digitação (ciclo)
+const typingData = [
+  {
+    title: "Beleza com delicadeza",
+    desc: "Um espaço criado para realçar sua essência com cuidado, arte e sofisticação."
+  },
+  {
+    title: "Autocuidado é poder",
+    desc: "Cada detalhe pensado para elevar sua autoestima e revelar sua melhor versão."
+  },
+  {
+    title: "Arte que valoriza você",
+    desc: "Maquiagem e design de sobrancelhas feitos para destacar sua beleza natural."
+  }
+];
 
-let ti = 0;
-let di = 0;
+let itemIndex = 0;
+let charIndex = 0;
 let deleting = false;
 
+const titleEl = document.getElementById("type-title");
+const descEl = document.getElementById("type-text");
+
 function typingEffect() {
-  const title = document.getElementById('type-title');
-  const desc = document.getElementById('type-text');
+  const current = typingData[itemIndex];
 
   if (!deleting) {
-    title.textContent = titleText.slice(0, ti++);
-    desc.textContent = descText.slice(0, di++);
-    if (ti > titleText.length && di > descText.length) {
+    titleEl.textContent = current.title.slice(0, charIndex);
+    descEl.textContent = current.desc.slice(0, charIndex);
+    charIndex++;
+
+    if (
+      charIndex > current.title.length &&
+      charIndex > current.desc.length
+    ) {
       setTimeout(() => (deleting = true), 2000);
     }
   } else {
-    title.textContent = titleText.slice(0, --ti);
-    desc.textContent = descText.slice(0, --di);
-    if (ti === 0 && di === 0) deleting = false;
+    titleEl.textContent = current.title.slice(0, charIndex);
+    descEl.textContent = current.desc.slice(0, charIndex);
+    charIndex--;
+
+    if (charIndex === 0) {
+      deleting = false;
+      itemIndex = (itemIndex + 1) % typingData.length;
+    }
   }
 }
+
+setInterval(typingEffect, 80);
+
 
 setInterval(typingEffect, 80);
 
