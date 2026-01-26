@@ -666,29 +666,33 @@ footer {
     font-size: 0.6rem;
   }
 }
-
-
-  /* HERO */
+@media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
     text-align: center;
+    padding-top: 7rem;
   }
 
   .hero-img {
     margin: 0 auto;
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
   }
 
   .typing {
     max-width: 100%;
-    margin: 0 auto;
   }
 
   .glow-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
+
+  .typing p {
+    font-size: 1rem;
+  }
+}
+
 
   /* SOBRE */
   .about {
