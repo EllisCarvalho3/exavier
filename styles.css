@@ -646,14 +646,17 @@ footer {
 }
 
 /* responsividade */
+/* =========================
+   RESPONSIVO — TABLET
+   ========================= */
 @media (max-width: 768px) {
 
-
+  /* ===== GERAL ===== */
   section {
     padding: 6rem 6vw 4rem;
   }
 
-  @media (max-width: 768px) {
+  /* ===== HEADER ===== */
   header {
     height: 64px;
     padding: 0 1rem;
@@ -673,10 +676,10 @@ footer {
   }
 
   header nav a {
-    font-size: 0.4rem;
+    font-size: 0.9rem; /* corrigido */
   }
-}
-@media (max-width: 768px) {
+
+  /* ===== HERO ===== */
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -701,10 +704,8 @@ footer {
   .typing p {
     font-size: 1rem;
   }
-}
 
-
-  /* SOBRE */
+  /* ===== SOBRE ===== */
   .about {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -719,16 +720,16 @@ footer {
 
   .about p {
     font-size: 1.15rem;
-     text-align: justify;
+    text-align: justify;
   }
 
-@media (max-width: 768px) {
+  /* ===== SLIDESHOW ===== */
   .slideshow-wrapper {
     gap: 0;
   }
 
   .nav {
-    display: none; 
+    display: none;
   }
 
   .slideshow {
@@ -743,7 +744,9 @@ footer {
     height: 280px;
   }
 }
-}
+
+
+
 @media (max-width: 480px) {
 
   /* ===== GERAL ===== */
