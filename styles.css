@@ -895,6 +895,7 @@ footer {
   .wrapper .icon {
     width: 60px;
     height: 60px;
+    padding: 0%;
   }
 
   .wrapper .icon i {
