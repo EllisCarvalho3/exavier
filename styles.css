@@ -851,6 +851,20 @@ footer {
 
 @media (max-width: 420px) {
 
+  header .logo {
+    left: 0.7rem;
+  }
+  
+  header nav a {
+    font-size: 0.8rem; /* corrigido */
+    left: 1.3rem;
+  }
+
+   header .logo img {
+    width: 62px;
+    height: 62px;
+  }
+
   h2.glow {
     font-size: 1.8rem;
   }
@@ -862,7 +876,7 @@ footer {
   .typing p {
     font-size: 1rem;
   }
-
+  
   .hero-img {
     width: 180px;
     height: 180px;
@@ -888,3 +902,14 @@ footer {
   }
 }
 
+@media (max-width: 420px) {
+  #servicos {
+    min-height: 75vh;
+  }
+}
+
+@media (max-width: 420px) {
+  #contato {
+    min-height: 40vh;
+  }
+}
