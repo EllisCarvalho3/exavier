@@ -125,3 +125,4 @@ const nav = document.querySelector('header nav');
 toggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
