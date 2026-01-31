@@ -225,10 +225,12 @@ p {
     0 0 6px rgba(218, 135, 241, 0.6),
     0 0 12px rgba(253, 142, 244, 0.5),
     0 0 20px rgba(233, 165, 241, 0.4);
-  animation: glowPulse 2.5s ease-in-out infinite;
+  animation: glowPulsePrices 2.8s ease-in-out infinite;
 }
 
-@keyframes glowPulse {
+
+
+@keyframes glowPulsePrices {
   0% {
     opacity: 0.6;
     text-shadow:
