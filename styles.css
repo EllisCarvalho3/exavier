@@ -19,13 +19,6 @@ input, textarea, select, button {
   color-scheme: light;
 }
 
-
-.menu-toggle {
-  display: none;
-  
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -156,6 +149,110 @@ h1, h2{
 p {
   text-align: justify;
 }
+
+/* modal de valores dos serviços */
+
+.prices-modal {
+  position: fixed;
+  inset: 0;
+  background: #d98dd075;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 2000;
+}
+
+.prices-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.prices-content {
+  background: var(--bg-section);
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  max-width: 720px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  max-height: 85vh;    
+  overflow-y: auto;      
+}
+
+.prices-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.prices-images img {
+  width: 100%;
+   max-height: 70vh;
+   object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.close-prices {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-main);
+  cursor: pointer;
+  z-index: 10;
+   cursor: pointer;
+  color: #e379d9;
+}
+
+.close-prices:hover {
+  color: #75096a;
+  transition: ease-in-out 0.3s;
+}
+
+  .glow-prices {
+ color: #a32296;
+  font-size: 2.5rem;
+  text-shadow:
+    0 0 6px rgba(218, 135, 241, 0.6),
+    0 0 12px rgba(253, 142, 244, 0.5),
+    0 0 20px rgba(233, 165, 241, 0.4);
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.6;
+    text-shadow:
+      0 0 4px rgba(218, 135, 241, 0.4),
+      0 0 8px rgba(253, 142, 244, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow:
+     0 0 10px rgba(218, 135, 241, 0.6),
+      0 0 20px rgba(253, 142, 244, 0.5),
+      0 0 30px rgba(233, 165, 241, 0.4);
+  }
+
+  100% {
+    opacity: 0.6;
+    text-shadow:
+     0 0 4px rgba(241, 135, 223, 0.4),
+      0 0 8px rgba(198, 142, 253, 0.3);
+  }
+}
+
+/* modal de valores dos serviços */
 
 /* inicio */
 

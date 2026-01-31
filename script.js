@@ -126,3 +126,22 @@ toggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
+// modal preços
+const openPrices = document.getElementById('openPrices');
+const pricesModal = document.getElementById('pricesModal');
+const closePrices = document.getElementById('closePrices');
+
+openPrices.addEventListener('click', (e) => {
+  e.preventDefault();
+  pricesModal.classList.add('active');
+});
+
+closePrices.addEventListener('click', () => {
+  pricesModal.classList.remove('active');
+});
+
+pricesModal.addEventListener('click', (e) => {
+  if (e.target === pricesModal) {
+    pricesModal.classList.remove('active');
+  }
+});
